@@ -22,10 +22,11 @@ return require('packer').startup(function(use)
 		end})
 
 	use('nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'})
-	use( 'nvim-treesitter/playground')
+	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 			requires = {
@@ -34,7 +35,7 @@ return require('packer').startup(function(use)
 				{'williamboman/mason.nvim'},
 				{'williamboman/mason-lspconfig.nvim'},
 
-				--Autocompletion
+				-- Autocompletion
 				{'hrsh7th/nvim-cmp'},
 				{'hrsh7th/cmp-buffer'},
 				{'hrsh7th/cmp-path'}, 
@@ -47,4 +48,31 @@ return require('packer').startup(function(use)
 				{'rafamadriz/friendly-snippets'},
 			}
 		}
+
+	-- Linter plugin
+	use {
+		'mfussenegger/nvim-lint',
+		config = function()
+			require("lint").linters_by_ft = {
+				javascript = { "quick-lint-js" },
+				python = { "pylint" },
+				c = { "cpplint" },
+				html = { "htmlhint" },
+				css = { "stylelint" },
+			}
+
+			-- Run linter on file save
+			vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+				callback = function()
+					require("lint").try_lint()
+				end,
+			})
+		end
+	}
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 end)

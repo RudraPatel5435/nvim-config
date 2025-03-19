@@ -6,13 +6,14 @@ lsp.extend_lspconfig()
 lsp.extend_cmp()
 
 
-
+ 
 mason_lspconfig.setup({
   ensure_installed = {
     'ts_ls',
     'cssls',
     'html',
     'pylsp',
+    'clangd',
   }
 })
 
@@ -23,7 +24,7 @@ cmp.setup({
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(),
     ['<C-n>'] = cmp.mapping.select_next_item(),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-a>'] = cmp.mapping.confirm({ select = true }),
     ['<C-Space>'] = cmp.mapping.complete(),
   },
   sources = {
