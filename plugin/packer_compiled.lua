@@ -110,12 +110,6 @@ _G.packer_plugins = {
     path = "/Users/rudra/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["conform.nvim"] = {
-    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\vformat\fconform\frequireÿ\3\1\0\6\0\27\0\0316\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\17\0025\3\18\0=\3\19\2B\0\2\0016\0\20\0009\0\21\0009\0\22\0'\2\23\0'\3\24\0003\4\25\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\tdesc\16Format Code\0\14<leader>f\6n\bset\vkeymap\bvim\19format_on_save\1\0\2\17lsp_fallback\2\15timeout_ms\3Ù\3\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\16tailwindcss\1\2\0\0\14rustywind\bcss\1\2\0\0\rprettier\thtml\1\2\0\0\rprettier\6c\1\2\0\0\17clang-format\vpython\1\2\0\0\nblack\15javascript\1\0\6\vpython\0\bcss\0\thtml\0\16tailwindcss\0\6c\0\15javascript\0\1\2\0\0\rprettier\nsetup\fconform\frequire\0" },
-    loaded = true,
-    path = "/Users/rudra/.local/share/nvim/site/pack/packer/start/conform.nvim",
-    url = "https://github.com/stevearc/conform.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/rudra/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -153,7 +147,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lint"] = {
-    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\rtry_lint\tlint\frequireÃ\2\1\0\5\0\21\0\0246\0\0\0'\2\1\0B\0\2\0025\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1=\1\2\0006\0\14\0009\0\15\0009\0\16\0005\2\17\0005\3\19\0003\4\18\0=\4\20\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\1\2\0\0\17BufWritePost\24nvim_create_autocmd\bapi\bvim\bcss\1\2\0\0\14stylelint\thtml\1\2\0\0\rhtmlhint\6c\1\2\0\0\fcpplint\vpython\1\2\0\0\vpylint\15javascript\1\0\5\vpython\0\bcss\0\thtml\0\6c\0\15javascript\0\1\2\0\0\18quick-lint-js\18linters_by_ft\tlint\frequire\0" },
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\rtry_lint\tlint\frequire≥\2\1\0\5\0\19\0\0226\0\0\0'\2\1\0B\0\2\0025\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\f\0009\0\r\0009\0\14\0005\2\15\0005\3\17\0003\4\16\0=\4\18\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\1\2\0\0\17BufWritePost\24nvim_create_autocmd\bapi\bvim\bcss\1\2\0\0\14stylelint\thtml\1\2\0\0\rhtmlhint\vpython\1\2\0\0\vpylint\15javascript\1\0\4\thtml\0\vpython\0\bcss\0\15javascript\0\1\2\0\0\18quick-lint-js\18linters_by_ft\tlint\frequire\0" },
     loaded = true,
     path = "/Users/rudra/.local/share/nvim/site/pack/packer/start/nvim-lint",
     url = "https://github.com/mfussenegger/nvim-lint"
@@ -201,22 +195,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
+-- Config for: nvim-lint
+time([[Config for nvim-lint]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\rtry_lint\tlint\frequire≥\2\1\0\5\0\19\0\0226\0\0\0'\2\1\0B\0\2\0025\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\f\0009\0\r\0009\0\14\0005\2\15\0005\3\17\0003\4\16\0=\4\18\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\1\2\0\0\17BufWritePost\24nvim_create_autocmd\bapi\bvim\bcss\1\2\0\0\14stylelint\thtml\1\2\0\0\rhtmlhint\vpython\1\2\0\0\vpylint\15javascript\1\0\4\thtml\0\vpython\0\bcss\0\15javascript\0\1\2\0\0\18quick-lint-js\18linters_by_ft\tlint\frequire\0", "config", "nvim-lint")
+time([[Config for nvim-lint]], false)
 -- Config for: neovim
 time([[Config for neovim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "neovim")
 time([[Config for neovim]], false)
--- Config for: nvim-lint
-time([[Config for nvim-lint]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\rtry_lint\tlint\frequireÃ\2\1\0\5\0\21\0\0246\0\0\0'\2\1\0B\0\2\0025\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1=\1\2\0006\0\14\0009\0\15\0009\0\16\0005\2\17\0005\3\19\0003\4\18\0=\4\20\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\1\2\0\0\17BufWritePost\24nvim_create_autocmd\bapi\bvim\bcss\1\2\0\0\14stylelint\thtml\1\2\0\0\rhtmlhint\6c\1\2\0\0\fcpplint\vpython\1\2\0\0\vpylint\15javascript\1\0\5\vpython\0\bcss\0\thtml\0\6c\0\15javascript\0\1\2\0\0\18quick-lint-js\18linters_by_ft\tlint\frequire\0", "config", "nvim-lint")
-time([[Config for nvim-lint]], false)
--- Config for: conform.nvim
-time([[Config for conform.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\vformat\fconform\frequireÿ\3\1\0\6\0\27\0\0316\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\17\0025\3\18\0=\3\19\2B\0\2\0016\0\20\0009\0\21\0009\0\22\0'\2\23\0'\3\24\0003\4\25\0005\5\26\0B\0\5\1K\0\1\0\1\0\1\tdesc\16Format Code\0\14<leader>f\6n\bset\vkeymap\bvim\19format_on_save\1\0\2\17lsp_fallback\2\15timeout_ms\3Ù\3\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\16tailwindcss\1\2\0\0\14rustywind\bcss\1\2\0\0\rprettier\thtml\1\2\0\0\rprettier\6c\1\2\0\0\17clang-format\vpython\1\2\0\0\nblack\15javascript\1\0\6\vpython\0\bcss\0\thtml\0\16tailwindcss\0\6c\0\15javascript\0\1\2\0\0\rprettier\nsetup\fconform\frequire\0", "config", "conform.nvim")
-time([[Config for conform.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -56,7 +56,6 @@ return require('packer').startup(function(use)
 			require("lint").linters_by_ft = {
 				javascript = { "quick-lint-js" },
 				python = { "pylint" },
-				c = { "cpplint" },
 				html = { "htmlhint" },
 				css = { "stylelint" },
 			}
