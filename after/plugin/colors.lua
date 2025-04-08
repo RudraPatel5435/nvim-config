@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  function colorMyPencils(color)
+=======
+ function bgrm(color)
+>>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)
 	 color = color or "rose-pine"
 	 vim.cmd.colorscheme(color)
 
@@ -7,4 +11,9 @@
 
  end
 
+<<<<<<< HEAD
  colorMyPencils()
+=======
+ bgrm()
+
+>>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)

@@ -89,3 +89,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<F5>", ":!gcc % -o %:r && %:r<CR>", { noremap = true, silent = true })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)
