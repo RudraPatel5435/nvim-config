@@ -18,7 +18,3 @@ require'nvim-treesitter.configs'.setup {
 		additional_vim_regex_highlighting = false,
 	},
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)

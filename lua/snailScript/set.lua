@@ -26,7 +26,4 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "0"
-<<<<<<< HEAD
-=======
 
->>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)

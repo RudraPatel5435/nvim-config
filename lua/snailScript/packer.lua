@@ -75,7 +75,3 @@ return require('packer').startup(function(use)
     end
 }
 end)
-<<<<<<< HEAD
-=======
-
->>>>>>> 45d9f36 (changed function name from colorMyPencils to bgrm)
