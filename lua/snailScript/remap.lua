@@ -41,7 +41,7 @@ vim.keymap.set(
 vim.keymap.set(
     "i",
     "{<CR>",
-    "{}<Esc>i<CR><CR><Esc>ki<Tab>"
+    "{}<Esc>i<CR><Esc>ko"
 )
 
 vim.keymap.set(
