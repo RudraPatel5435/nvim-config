@@ -15,6 +15,13 @@ mason_lspconfig.setup({
   }
 })
 
+require('lspconfig').ts_ls.setup({})
+ require('lspconfig').cssls.setup({})
+ require('lspconfig').html.setup({})
+ require('lspconfig').pylsp.setup({})
+ require('lspconfig').clangd.setup({})
+ require('lspconfig').tailwindcss.setup({})
+
 require('lspconfig').cssls.setup({
     settings = {
         css = {
@@ -30,14 +37,14 @@ require('lspconfig').cssls.setup({
 })
 
 -- Auto open diagnostics on save
-vim.cmd [[
-autocmd TextChanged,TextChangedI,InsertLeave * lua vim.diagnostic.open_float(nil, { focusable = false, scope = "line" })
-]]
+-- vim.cmd [[
+-- autocmd TextChanged,TextChangedI,InsertLeave * lua vim.diagnostic.open_float(nil, { focusable = false, scope = "line" })
+-- ]]
 
 --Automatically show diagnostics
 vim.diagnostic.config({
     virtual_text = {
-        prefix = "●"
+        prefix = ""
     },
     signs = true,  -- Enable signs (icons on the left)
     float = false,

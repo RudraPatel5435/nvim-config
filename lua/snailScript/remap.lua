@@ -87,3 +87,13 @@ vim.api.nvim_set_keymap("v", "<C-_>", "gc", {
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set("i", "<div>", "<div></div><Esc>F>a")
+
+vim .keymap.set("i", "<div<CR>", "<div></div><Esc>F<i<CR><Esc>O<Tab>")
+
+vim.keymap.set("n", "<leader>ga", ':Git add .<CR>')
+
+vim.keymap.set("n", "<leader>gc", ':Git commit -m ""<left>')
+
+vim.keymap.set("n", "<leader>gp", ':Git push')
